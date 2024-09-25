@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisyuu  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bg-color': '#B4F461',
+                        'nav-color': '#F9F7F3',
+                        'dnt-color': '#111111B3'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section>
+        <div class="w-11/12 mx-auto navbar bg-nav-color mt-10">
+            <div class="navbar-start">
+                <a id="index-html-page" class=" bg-bg-color btn btn-lg text-3xl font-medium ml-48 rounded-xl">Home</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 justify-center items-center">
+                    <img src="./imges/logo.png" alt="logo">
+                    <span class="font-medium text-xl text-black ml-3">Donate Bangladesh</span>
+                </ul>
+            </div>
+            <div class="navbar-end mr-48">
+                <p class="flex justify-center items-center">
+                    <img src="./imges/coin.png" alt="coin">
+                    <span id="bdt-donation" class="font-normal text-xl ml-3 text-dnt-color">5000</span>
+                    <span class="font-normal text-xl ml-3 text-dnt-color">BDT</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="w-11/12 container mx-auto mt-11">
+        <div class="collapse collapse-arrow bg-base-200 mb-3">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-5xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p class="text-2xl font-normal">The Document Object Model (DOM) is a programming interface for web
+                    documents. It represents the page
+                    so that programs can change the document structure, style, and content. The DOM represents the
+                    document as nodes and objects; that way, programming languages can interact with the page.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-3">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-5xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>JavaScript provides several methods to select DOM elements.Example getElementById, Using
+                    getElementsByClassName, Using getElementsByTagName, Using querySelector, Using querySelectorAll.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-3">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-5xl font-medium">What is event delegation in the context of the DOM, and why
+                is it useful?</div>
+            <div class="collapse-content">
+                <p class="text-2xl font-normal">Event delegation refers to the process of using event propagation
+                    (bubbling) to handle events at a
+                    higher level in the DOM than the element on which the event originated.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-3">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-5xl font-medium">How do you manipulate an element's attributes and styles
+                using the DOM?</div>
+            <div class="collapse-content">
+                <p class="text-3xl font-normal">If you want to change other attributes like id , href , or src , you can
+                    use the setAttribute()
+                    method. The setAttribute() method accepts two arguments: The name of the attribute to set. The value
+                    of the attribute to set.</p>
+            </div>
+        </div>
+    </section>
+    <script src="/js/home.js"></script>
+</body>
+
+</html>
